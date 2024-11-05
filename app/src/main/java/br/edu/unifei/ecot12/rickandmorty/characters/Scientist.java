@@ -6,15 +6,15 @@ import java.util.List;
 import br.edu.unifei.ecot12.rickandmorty.inventions.Invention;
 
 public class Scientist extends Character {
+
     private List<Invention> inventions;
     private int intelligenceLevel;
 
     public Scientist(String name, String species, List<String> abilities, int intelligenceLevel) {
-    super(name, species, abilities);
-    this.intelligenceLevel = intelligenceLevel;
-    this.inventions = new ArrayList<>();  
-}
-
+        super(name, species, abilities);
+        this.intelligenceLevel = intelligenceLevel;
+        this.inventions = new ArrayList<>();
+    }
 
     @Override
     public void displayInfo() {
@@ -41,5 +41,4 @@ public class Scientist extends Character {
         this.intelligenceLevel = intelligenceLevel;
     }
 
-    
 }

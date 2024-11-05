@@ -7,7 +7,7 @@ public class Invention {
     private String name;
     private String function;
     private Scientist creator;
-    private InventionBehavior behavior; // Campo para o comportamento
+    private InventionBehavior behavior; 
 
     public Invention(String name, String function, Scientist creator) {
         this.name = name;

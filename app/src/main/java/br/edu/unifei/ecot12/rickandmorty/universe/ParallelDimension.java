@@ -3,9 +3,10 @@ package br.edu.unifei.ecot12.rickandmorty.universe;
 import java.util.List;
 
 public class ParallelDimension extends Universe {
+
     private int instability;
     private int population;
-    
+
     public ParallelDimension(String name, String dimension, List<String> specificRules, int instability,
             int population) {
         super(name, dimension, specificRules);
@@ -29,5 +30,4 @@ public class ParallelDimension extends Universe {
         this.population = population;
     }
 
-    
 }
