@@ -7,7 +7,7 @@ public class Spaceship extends Invention {
     private int speed;
 
     public Spaceship(String name, String function, Scientist creator, String fuel, int speed) {
-        super(name, function, creator);  // Usa o construtor completo
+        super(name, function, creator); 
         this.fuel = fuel;
         this.speed = speed;
     }

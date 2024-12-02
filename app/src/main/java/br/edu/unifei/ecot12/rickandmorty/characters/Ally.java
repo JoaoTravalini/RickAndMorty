@@ -2,6 +2,8 @@ package br.edu.unifei.ecot12.rickandmorty.characters;
 
 import java.util.List;
 
+import br.edu.unifei.ecot12.rickandmorty.universe.Planet;
+
 public class Ally extends Character {
     private int loyalty;
 
@@ -13,8 +15,8 @@ public class Ally extends Character {
         System.out.println("Loyalty: " + loyalty);
     }
 
-    public Ally(String name, String species, List<String> abilities, int loyalty) {
-        super(name, species, abilities);
+    public Ally(String name, String species, List<String> abilities, Planet planet, int loyalty) {
+        super(name, species, abilities, planet);
         this.loyalty = loyalty;
     }
 

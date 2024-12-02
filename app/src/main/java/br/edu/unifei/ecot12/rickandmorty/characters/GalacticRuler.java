@@ -2,12 +2,14 @@ package br.edu.unifei.ecot12.rickandmorty.characters;
 
 import java.util.List;
 
+import br.edu.unifei.ecot12.rickandmorty.universe.Planet;
+
 public class GalacticRuler extends Character {
     private int influenceLevel;
     private List<String> lawsCreated;
-    public GalacticRuler(String name, String species, List<String> abilities, int influenceLevel,
+    public GalacticRuler(String name, String species, List<String> abilities, Planet planet, int influenceLevel,
             List<String> lawsCreated) {
-        super(name, species, abilities);
+        super(name, species, abilities, planet);
         this.influenceLevel = influenceLevel;
         this.lawsCreated = lawsCreated;
     }

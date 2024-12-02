@@ -3,6 +3,7 @@ package br.edu.unifei.ecot12.rickandmorty.characters;
 import java.util.List;
 
 import br.edu.unifei.ecot12.rickandmorty.inventions.Weapon;
+import br.edu.unifei.ecot12.rickandmorty.universe.Planet;
 
 public class Villain extends Character {
     private List<String> motives;
@@ -19,8 +20,8 @@ public class Villain extends Character {
         System.out.println("Weapon: " + weapon);
     }
 
-    public Villain(String name, String species, List<String> abilities, List<String> motives, int threatLevel, Weapon weapon) {
-        super(name, species, abilities);
+    public Villain(String name, String species, List<String> abilities, Planet planet, List<String> motives, int threatLevel, Weapon weapon) {
+        super(name, species, abilities, planet);
         this.motives = motives;
         this.threatLevel = threatLevel;
         this.weapon = weapon;

@@ -2,14 +2,14 @@ package br.edu.unifei.ecot12.rickandmorty.characters;
 
 import java.util.List;
 
+import br.edu.unifei.ecot12.rickandmorty.universe.Planet;
+
 public class Human extends Character {
     private String occupation;
-    private String homePlanet;
 
-    public Human(String name, String species, List<String> abilities, String occupation, String homePlanet) {
-        super(name, species, abilities);
+    public Human(String name, String species, List<String> abilities, Planet planet, String occupation) {
+        super(name, species, abilities, planet);
         this.occupation = occupation;
-        this.homePlanet = homePlanet;
     }
 
     @Override
@@ -17,7 +17,7 @@ public class Human extends Character {
         System.out.println("Name: " + getName());
         System.out.println("Species: " + getSpecies());
         System.out.println("Abilities: " + getAbilities());
-        System.out.println("Home Planet: " + homePlanet);
+        System.out.println("Home Planet: " + getPlanet());
         System.out.println("Occupation: " + occupation);
     }
 
@@ -27,15 +27,5 @@ public class Human extends Character {
 
     public void setOccupation(String occupation) {
         this.occupation = occupation;
-    }
-
-    public String getHomePlanet() {
-        return homePlanet;
-    }
-
-    public void setHomePlanet(String homePlanet) {
-        this.homePlanet = homePlanet;
-    }
-
-    
+    } 
 }

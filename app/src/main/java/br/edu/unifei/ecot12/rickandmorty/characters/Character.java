@@ -2,15 +2,19 @@ package br.edu.unifei.ecot12.rickandmorty.characters;
 
 import java.util.List;
 
+import br.edu.unifei.ecot12.rickandmorty.universe.Planet;
+
 public abstract class Character {
     protected String name;
     protected String species;
     protected List<String> abilities;
+    protected Planet planet;
 
-    public Character(String name, String species, List<String> abilities) {
+    public Character(String name, String species, List<String> abilities, Planet planet) {
         this.name = name;
         this.species = species;
         this.abilities = abilities;
+        this.planet = planet;
     }
 
     public abstract void displayInfo();
@@ -37,6 +41,14 @@ public abstract class Character {
 
     public void setAbilities(List<String> abilities) {
         this.abilities = abilities;
+    }
+
+    public Planet getPlanet() {
+        return planet;
+    }
+
+    public void setPlanet(Planet planet) {
+        this.planet = planet;
     }
     
     

@@ -4,14 +4,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 import br.edu.unifei.ecot12.rickandmorty.inventions.Invention;
+import br.edu.unifei.ecot12.rickandmorty.universe.Planet;
 
 public class Scientist extends Character {
 
     private List<Invention> inventions;
     private int intelligenceLevel;
 
-    public Scientist(String name, String species, List<String> abilities, int intelligenceLevel) {
-        super(name, species, abilities);
+    public Scientist(String name, String species, List<String> abilities, Planet planet, int intelligenceLevel) {
+        super(name, species, abilities, planet);
         this.intelligenceLevel = intelligenceLevel;
         this.inventions = new ArrayList<>();
     }

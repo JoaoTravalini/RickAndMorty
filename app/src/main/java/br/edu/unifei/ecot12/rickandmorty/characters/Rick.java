@@ -1,14 +1,16 @@
 // Rick.java
 package br.edu.unifei.ecot12.rickandmorty.characters;
 
+import java.util.List;
+
+import br.edu.unifei.ecot12.rickandmorty.universe.Planet;
+
 public class Rick extends Scientist {
     private String version;
-    private String originUniverse;
 
-    public Rick(String name, String version, String originUniverse) {
-        super(name, "Human", null, 100);
+    public Rick(String name, String species, List<String> abilities, Planet planet, int intelligenceLevel, String version) {
+        super(name, "Human", abilities, planet, 100);
         this.version = version;
-        this.originUniverse = originUniverse;
     }
 
     public String getVersion() {
@@ -19,16 +21,8 @@ public class Rick extends Scientist {
         this.version = version;
     }
 
-    public String getOriginUniverse() {
-        return originUniverse;
-    }
-
-    public void setOriginUniverse(String originUniverse) {
-        this.originUniverse = originUniverse;
-    }
-
     @Override
     public void displayInfo() {
-        System.out.println("Rick Sanchez - Version: " + version + ", Origin Universe: " + originUniverse);
+        System.out.println("Rick Sanchez - Version: " + version);
     }
 }
